@@ -1,0 +1,72 @@
+.taskInputWrapper {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    border-radius: 4px;
+    column-gap: 20px;
+}
+/* .taskInputWrapper:focus {
+    background-color: rgba(0, 0, 255, 0.356);
+} */
+.dark .taskInputWrapper {
+    background-color: rgb(44, 41, 58);
+}
+.taskInputWrapper form {
+    display: contents;
+}
+.ring {
+    height: 20px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dark .ring {
+    border-color: rgb(85, 85, 85);
+}
+.ring.completed {
+    background: linear-gradient(blue, violet)
+}
+.taskInputWrapper input {
+    border: 0;
+    background-color: inherit;
+    width: 100%;
+    font-size: 19px;
+}
+.dark .taskInputWrapper input {
+    color :white;
+}
+.taskInputWrapper input:focus {
+    border: none;
+    outline: none;
+}
+.taskInputWrapper input::placeholder {
+    color: rgba(0, 0, 0, 0.397);
+    font-size: 16px;
+}
+.dark .taskInputWrapper input::placeholder {
+    color: rgb(85, 85, 85);
+}
+.taskInputWrapper .inputSubmit {
+    background-color: rgb(67, 67, 161);
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    flex: 0 0 0;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.dark .taskInputWrapper .inputSubmit {
+    background-color: rgb(141, 27, 194);
+}
+
+@media (min-width: 501px) {
+    .taskInputWrapper .inputSubmit {
+        display: none;
+    }
+}

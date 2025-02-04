@@ -1,0 +1,75 @@
+.tasks {
+    
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px -5px black;
+}
+.task {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 2px solid rgba(37, 37, 37, 0.315);
+}
+.dark .task {
+    background-color: rgb(44, 41, 58);
+    color: rgb(207, 207, 207);
+}
+.task.hide {
+    display: none;
+}
+.task .taskText {
+    padding-left: 20px;
+    cursor: default;
+}
+.taskText.true {
+    text-decoration: line-through;
+    color: gray;
+}
+.task .cancelImage {
+    width: 15px;
+    cursor: pointer;
+}
+.endTaskSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.dark .endTaskSection {
+    background-color: rgb(44, 41, 58);
+}
+.endTaskSection p {
+    padding: 20px;
+    font-size: 12px;
+    color: gray;
+    cursor: default
+}
+.clearCompleted {
+    cursor: pointer;
+}
+.specialSelection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 10px -4px black;
+    border-radius: 4px;
+}
+.dark .specialSelection {
+    background-color: rgb(44, 41, 58);
+    color: rgb(209, 209, 209);
+}
+.specialSelectionOption {
+    cursor: pointer;
+    padding: 15px 0;
+}
+.specialSelectionOption.selected {
+    color: blue;
+}
+.dark .specialSelectionOption.selected {
+    color: rgb(88, 88, 255);
+}

@@ -1,0 +1,45 @@
+*, 
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scrollbar-width: thin;
+}
+.mainAppWrapper {
+  min-height: 100vh;
+  max-width: 100%;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.dark.mainAppWrapper {
+  background-color: #16151f;
+}
+.topContainer {
+  background: url('/images/bg-mobile-light.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 375 / 200;
+  max-height: 300px;
+}
+.dark .topContainer {
+  background: url('/images/bg-mobile-dark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 375 / 200;
+}
+.restContainer {
+  flex-grow: 1;
+  transform: translateY(-200px);
+}
+.todoWrapper {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}

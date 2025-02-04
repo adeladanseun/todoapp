@@ -1,0 +1,13 @@
+.todoHeader {
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.todoText {
+    font-size: 29px;
+    letter-spacing: 6px;
+}
